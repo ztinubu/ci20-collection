@@ -1,0 +1,11 @@
+body {
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 18px;
+  background: lightgray;
+  color: #000;
+  margin: 0 auto;
+  /*width: 100%;*/
+  overflow-x: hidden;
+  color: white;
+  
+}

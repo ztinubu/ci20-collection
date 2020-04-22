@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+<head>
+  <title>Collection Demo</title>
+  <script src="script.js"></script>
+  <script>
+	var i = 0;
+	var imageSlide = [];
+	var time = 10000;
+
+
+	imageSlide[0] = 'images/city-7.gif'
+	imageSlide[1] = 'images/city-6.gif'
+	imageSlide[2] = 'images/home-1.gif'
+	imageSlide[3] = 'images/home-3.gif'
+	imageSlide[4] = 'images/city-12.gif'
+	imageSlide[5] = 'images/city-5.gif'
+	
+
+
+	function changeImg(){
+		document.slide.src = imageSlide[i];
+
+		if(i < imageSlide.length - 1){
+			i++;
+		} else {
+			i = 0;
+		}
+
+		setTimeout("changeImg()", time);
+
+		}
+
+		window.onload = changeImg;
+	
+ 
+</script>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <style>
+
+  html{
+  	width: 50%;
+  	
+  }
+
+   /*body{*/
+   /*	background-image: url(images/home-1.gif);
+   	background-image: url(images/home-2.gif);
+   	background-image: url(images/home-3.gif);
+   	background-image: url(images/city-7.gif);
+   	background-image: url(images/city-6.gif);*/
+   	/*background-image: url(images/city-5.gif);*/
+   	
+   	/*background-repeat: no-repeat;*/
+   	/*background-size: cover;*/
+
+   /*}*/
+
+   img {
+   	width: 300px;
+   	height: 300px;
+   	opacity: 0.5;
+   	background-size: cover;
+   	/*float: right;*/
+   }
+   img:hover{
+   	opacity: 1;
+   }
+   h1{
+   	font-size: 100px;
+   	color: white;
+   	opacity: 0.2;
+   	margin-bottom: 30px
+   }
+  	a {
+  	color: white;
+  	opacity: 0.5;
+  	cursor:progress;
+  	}
+  	a:hover{
+  		opacity: 1;
+  	}
+  	p{
+  	 color:white;
+  	 opacity: 0.5;
+  	}
+  	audio{
+  		opacity: 0.7;
+  	}
+
+  </style>
+</head>
+
+
+<body id="item">
+
+
+<!-- <img name="slide" type="background-image">	 -->
+	<img name="slide" style='position:fixed;top:0px;left:0px;width:100%;height:100%;z-index:-1;'>
+
+ <span class="highlight"><h1>Name</h1></span>
+  <img src="#" id="cover-art-item">
+  <p class="artist-name">Artist Name</p>
+  <p class="album">Name, Date</p>
+  <p class="song-genre">Genre</p>
+  
+  <audio controls autoplay class="audio-track">
+  <source src="#" type="audio/mpeg">
+  </audio>
+
+<p class="slide-controls">
+  <a href="item.html" class="prev">PREV</a> — 
+  <a href="item.html" class="next">NEXT</a>
+</p>
+
+  <p><a href="index.html">INDEX</a></p>
+</body>
+</html>

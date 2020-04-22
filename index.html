@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+<head>
+  <title>Collection Demo</title>
+  <script src="script.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+  <style>
+  	a {
+  		/*font-size: 100px;*/
+  		cursor:progress;
+  	}
+  </style>
+</head>
+<body id="index">
+
+<div id="categories">
+ <div class="category-genre">
+    <li><a href="#" class="filters" onclick="show('.Hip-Hop');">Hip-Hop</a></li>
+    <li><a href="#" class="filters" onclick="show('.RNB');">R&B</a></li>
+    <li><a href="#" class="filters" onclick="show('.Soul');">Soul</a></li>
+    <li><a href="#" class="filters" onclick="show('.Electronic');">Electronic</a></li>
+    <li><a href="#" class="filters" onclick="show('.Pop');">Pop</a></li>
+    <li><a href="#" class="filters" onclick="show('.Dance');">Dance</a></li>
+    <li><a href="#" class="filters" onclick="show('.Rap');">Rap</a></li>
+    <li><a href="#" class="filters" onclick="show('.Electronica');">Electronica</a></li>
+  
+
+    <li><a href="#" class="filters" onclick="show('.items');">See All</a></li>
+  </div>
+  <div class="category-instrument">
+   <li><a href="#" class="filters" onclick="show('.bass808');">808</a></li>
+    <li><a href="#" class="filters" onclick="show('.hi-hat');">hi-hat</a></li>
+    <li><a href="#" class="filters" onclick="show('.snare');">snare</a></li>
+    <li><a href="#" class="filters" onclick="show('.clap');">clap</a></li>
+    <li><a href="#" class="filters" onclick="show('.synth');">synth</a></li>
+    <li><a href="#" class="filters" onclick="show('.synth-bass');">synth-bass</a></li>
+    <li><a href="#" class="filters" onclick="show('.click');">click</a></li>
+    <li><a href="#" class="filters" onclick="show('.tom');">tom</a></li>
+    <li><a href="#" class="filters" onclick="show('.strings');">strings</a></li>
+    <li><a href="#" class="filters" onclick="show('.guitar');">guitar</a></li>
+    <li><a href="#" class="filters" onclick="show('.bass-guitar');">bass-guitar</a></li>
+    <li><a href="#" class="filters" onclick="show('.piano');">piano</a></li>
+    <li><a href="#" class="filters" onclick="show('.keys');">keys</a></li>
+    <li><a href="#" class="filters" onclick="show('.rim-shot');">rim-shot</a></li>
+    <li><a href="#" class="filters" onclick="show('.shaker');">shaker</a></li>
+    <li><a href="#" class="filters" onclick="show('.open-hat');">open-hat</a></li>
+    <li><a href="#" class="filters" onclick="show('.ride');">ride</a></li>
+    <li><a href="#" class="filters" onclick="show('.crash');">crash</a></li>
+    <li><a href="#" class="filters" onclick="show('.bogo');">bongo</a></li>
+    <li><a href="#" class="filters" onclick="show('.bass');">bass</a></li>
+    <li><a href="#" class="filters" onclick="show('.pad');">pad</a></li>
+  </div>
+
+  	<div class="category-mood">
+  		<li><a href="#" class="filters" onclick="show('.Late-Night');">Late-Night</a></li>
+  		<li><a href="#" class="filters" onclick="show('.Drive');">Drive</a></li>
+  		<li><a href="#" class="filters" onclick="show('.Love');">Love</a></li>
+  		<li><a href="#" class="filters" onclick="show('.Break-Up');">Break-Up</a></li>
+  		<li><a href="#" class="filters" onclick="show('.Subway-Station');">Subway-Station</a></li>
+  		<li><a href="#" class="filters" onclick="show('.Night-Out');">Night-Out</a></li>
+  		<li><a href="#" class="filters" onclick="show('.Subway-Station');">Subway-Station</a></li>
+  		<li><a href="#" class="filters" onclick="show('.Summer');">Summer</a></li>
+  		<li><a href="#" class="filters" onclick="show('.Groove');">Groove</a></li>
+  		<li><a href="#" class="filters" onclick="show('.Darko');">Darko</a></li>
+  		<li><a href="#" class="filters" onclick="show('.Downtown-Errands');">Downtown-Errands</a></li>
+  		<li><a href="#" class="filters" onclick="show('.Triumph');">Triumph</a></li>
+
+  	</div>
+  	<div class="category-special-attribute">
+  		<li><a href="#" class="filters" onclick="show('.Tight-drums');">Tight-drums</a></li>
+  		<li><a href="#" class="filters" onclick="show('.Analog');">Analog</a></li>
+  		<li><a href="#" class="filters" onclick="show('.Digital');">Digital</a></li>
+  		<li><a href="#" class="filters" onclick="show('.Expressive');">Expressive</a></li>
+  		<li><a href="#" class="filters" onclick="show('.Drum-fill');">Drum-fill</a></li>
+  		<li><a href="#" class="filters" onclick="show('.Smooth-transients');">Smooth-transients</a></li>
+  		<li><a href="#" class="filters" onclick="show('.Vocal-layering');">Vocal-layering</a></li>
+  		<li><a href="#" class="filters" onclick="show('.Beat-switch');">Beat-switch</a></li>
+  		<li><a href="#" class="filters" onclick="show('.Sampling');">Sampling</a></li>
+  		<li><a href="#" class="filters" onclick="show('.Technical');">Technical</a></li>
+  		<li><a href="#" class="filters" onclick="show('.No-percussion');">No-percussion</a></li>
+  	</div>
+  	<div class="category-fx">
+  		<li><a href="#" class="filters" onclick="show('.Reverb');">Reverb</a></li>
+  		<li><a href="#" class="filters" onclick="show('.Distortion');">Distortion</a></li>
+  		<li><a href="#" class="filters" onclick="show('.Delay');">Delay</a></li>
+  		<li><a href="#" class="filters" onclick="show('.Halftime');">Halftime</a></li>
+  		<li><a href="#" class="filters" onclick="show('.Vocal-doubler');">Vocal-doubler</a></li>
+  		<li><a href="#" class="filters" onclick="show('.Panning');">Panning</a></li>
+  		<li><a href="#" class="filters" onclick="show('.Imager');">Imager</a></li>
+  		<li><a href="#" class="filters" onclick="show('.Auto-filter');">Auto-filter</a></li>
+  		<li><a href="#" class="filters" onclick="show('.Compressor');">Compressor</a></li>
+  		<li><a href="#" class="filters" onclick="show('.Saturator');">Saturator</a></li>
+  		<li><a href="#" class="filters" onclick="show('.Sidechain');">Sidechain</a></li>
+  		<li><a href="#" class="filters" onclick="show('.Limiter');">Limiter</a></li>
+  		<li><a href="#" class="filters" onclick="show('.Frequency-shift');">Frequency-shift</a></li>
+  		<li><a href="#" class="filters" onclick="show('.Pitch-shift');">Pitch-shift</a></li>
+
+  	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+  
+  <div class="result">
+  		
+  </div>
+</body>
+</html>
